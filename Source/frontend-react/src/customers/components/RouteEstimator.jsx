@@ -21,7 +21,7 @@ export default function RouteEstimator({ restaurantId }) {
 
             try {
                 const resp = await fetch(
-                    `/api/route/auto?restaurantId=${restaurantId}&userId=${userId}`
+                    `http://localhost:5454/api/route/auto?restaurantId=${restaurantId}&userId=${userId}`
                 );
 
                 // Always read as text first so we can log raw response
